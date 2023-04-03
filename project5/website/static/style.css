@@ -1,0 +1,247 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------HOME PAGE-----------------------------*/
+/* Styles big picture and text at the top */
+.header {
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(235, 5, 5, 0.4), rgba(235, 5, 5, 0.4)),url(CCCimages/banner.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.7;
+}
+/* Container for text positioning */
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* Styles text design */
+.text-box h1 {
+    font-size: 80px;
+    font-family: 'Gluten', cursive;
+}
+.text-box p {
+    margin: 0px 0px 40px;
+    font-size: 14px;
+    color: #fff
+}
+
+/* Styles button on header */
+.home-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.home-btn:hover {
+    border: 1px solid #1e761b;
+    background: rgb(30, 118, 27);
+    transition: 1s;
+}
+
+/*--------------------------NAVIGATION BAR-----------------------------*/
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Styles logo */
+nav img{
+    width: 150px;
+}
+/* Styles tablink positioning */
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+/* Styles tablink design */
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+/* Generates underline when hovering over tablinks */
+.nav-links ul li:after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #1e761b;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover:after {
+    width: 100%;
+}
+
+/*--------------------------ABOUT-----------------------------*/
+/* Styles content of about section */
+.home-content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.home-content h1 {
+    text-align: center;
+	  font-size: 60px;
+	  background:url(CCCimages/holy.gif);
+    background-size: 200px 150px;
+    font-size: 90px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* demo header */
+.home-content h2 {
+    text-align: center;
+	  font-size: 60px;
+	  background:url(CCCimages/dancecow.gif);
+    background-size: 200px 150px;
+    font-size: 90px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+p {
+    color: #100A39;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/*--------------------------PRICING-----------------------------*/
+/* Container for pricing page content */
+.pricing {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.pricing h2 {
+	text-align: center;
+	font-size: 60px;
+	background:url(CCCimages/blacksnow.gif);
+    background-size: 200px 150px;
+    font-size: 90px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* Allows for three columns in one row */
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+/* Positions the pricing plans + images */
+.price-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.price-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+/* Creates layer above image when hovering */
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    background: rgba(30, 118, 27, 0.4);
+}
+.layer:hover {
+    background: rgba(235, 5, 5, 0.8);
+}
+/* Hides layer text when not hovering */
+.layer ul li {
+    text-align: left;
+    font-family: Didot, serif;
+    padding: 10px 30px 10px 10px;
+    opacity: 0;
+}
+/* Shows text when hovering */
+.layer:hover ul li {
+    font-size: 15px;
+    text-align: left;
+    font-family: Didot, serif;
+    padding: 10px 30px 10px 10px;
+    opacity: 1;
+    color: white;
+}
+/* Styles header of layers */
+.layer h3 {
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1.5px;
+    font-family: 'Gluten', cursive;
+    font-size: 30px;
+}
+
+/*--------------------------MORE-----------------------------*/
+.join {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(235, 5, 5, 0.4),rgba(30, 118, 27, 0.4)),url(CCCimages/botdemo.jpg);
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px;
+}
+.join h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 40px;
+}
+/*--------------------------BACKGROUND-----------------------------*/
+.snow-cont{
+    background-color: pink;
+    background-image: url('CCCimages/snow1.png'), url('CCCimages/snow2.png'), url('CCCimages/snow3.png');  
+    animation: snow 20s linear infinite;
+    width: 100%; 
+    height: 100%;
+}     
+@keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px}
+}
