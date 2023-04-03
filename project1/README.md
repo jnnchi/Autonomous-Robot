@@ -1,4 +1,4 @@
-# PROJECT 1: Move the Robot Forward
+# PROJECT 1: Move the Robot Forward (October 2021)
 For this project, we assembled a robot with a Raspberry Pi 3b+ processor and programmed it to move in a straight line for a specified number of feet using Python. The Motor class defines the movement of the robot's motors, while the Robot class specifies the GPIO pin numbers we used. The main file imports both these classes to run the robot in a user-friendly way. 
 
 ```python
