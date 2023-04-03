@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CCC Project 6</title>
+    <link href="{{url_for('static',filename='style.css')}}" rel="stylesheet" type="text/css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Rubik&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item" id="q1">
+        <h1>stream</h1>
+        <div class="center">
+          <img src="{{ url_for('stream') }}" class="stream">
+        </div>
+      </div>
+
+       <div class="item" id="q2">
+        <h1>annotated</h1>
+        <div class="center">
+          <img src="{{ url_for('edited') }}" class="stream">
+        </div><!--DOES THIS WORK -->
+      </div>
+
+      <div class="item" id="q3">
+        <h1>navigation</h1>
+        <div class="contain">
+          <button onclick="goFwd()">FWD</button>
+          <button onclick="goBwd()">BWD</button>
+          <button onclick="goRight()">RIGHT</button>
+          <button onclick="goLeft()">LEFT</button>
+          <button onclick="goMaze()">AUTO</button>
+
+          <div class="input_cont">
+            <label for="userInput">Desired Distance (ft) or Angle (degrees):</label>
+            <input type="number" id="userInput" name="userInput" size="10" max="999">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="item" id="q4">
+        <h1>output</h1>
+        <pre id="output"></pre>
+      </div>
+
+    </div>
+    <script src="{{url_for('static',filename='script.js')}}"></script>
+  </body>
+</html>
