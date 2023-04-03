@@ -1,4 +1,4 @@
-# PROJECT 2: Programming the Robot to Run a Set Maze (November 2021)
+# PROJECT 2: Programming the Robot to Run a Specified Course (November 2021)
 For this project, we programmed the robot to move forward 50 inches, turn right 90 degrees, move forward 58 inches, move backwards 20 inches, turn right 90 degrees, then move forward 38 inches to finish in a set rectangular region. We focused on refining the conversion factors and motion times for our motor functions in order to maximize the robot's precision when we passed in parameters in the main file.
 
 ```python
