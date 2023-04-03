@@ -1,0 +1,97 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  background: white;
+}
+
+h1 {
+  margin: 20px;
+  font-size: 50px;
+  font-family: 'Moo Lah Lah', cursive;
+}
+
+/* ------------- SEPARATES TO QUADRANTS -------------- */
+.grid {
+  border: 1px solid purple;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 50vh 50vh;
+}
+
+.item {
+  border: 1px solid black;
+}
+
+#q1 {
+  background-color: #D5F6FF;
+}
+
+#q2 {
+  background-color: #FFD5F8;
+}
+
+#q3 {
+  background-color: #DDD5FF;
+}
+
+#q4 {
+  background-color: #FFF2D5;
+}
+
+/* ------------- STREAM SECTION --------------- */
+.center {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+}
+
+.stream {
+  width: 50%;
+  height: 50%;
+}
+
+/* ------------- NAV SECTION --------------*/
+.contain {
+    width: 520px;
+    overflow-y: auto;
+}
+
+.contain button {
+    width: 100px;
+    height: 75px;
+    float: left;
+    background: lightgray;
+    margin: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+
+.input_cont {
+    width: 250px;
+    height: 100px;
+    float: left;
+    margin: 15px;
+    overflow-y: auto;
+}
+
+button {
+  background: #DDD5FF;
+  border-color: #8353e2;
+  color: #8353e2;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: #8353e2;
+  color: #ffffff;
+}
+
+/* ------------- LOG SECTION --------------- */
+#output {
+  margin: auto; 
+}
