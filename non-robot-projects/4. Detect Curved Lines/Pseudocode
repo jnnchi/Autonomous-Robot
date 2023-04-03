@@ -1,0 +1,70 @@
+"""
+
+# this all happens after you perspective transform correctly!!!
+------------------------
+FUNCTIONS NEEDED:
+def build line equation(slope, point on line) - call it get_equation
+    return slope, y int
+
+def find point on line given distance(slope, y int, desired distance, starting point) - find_point
+    # dist can be pos or neg
+    return point
+
+def get_slope
+    finds slope between two of the black lines
+
+def midpoint(b1, b2)
+
+def blackout the image(b1, b2, C):
+    create a black mask
+    draw filled polygons in white
+    set the image to black where the mask is black
+    return blacked image
+
+# PROBLEM: it might detect the edges of the triangle instead of the black lines
+def detect lines and return coordinates of midpoint lines(black_img): - find_midline
+    run HoughLines on black_img
+    for line in detected lines: # idea is to detect only the black lines
+        if the lines are not on the same line:
+            set the endpoints to (x1,y1) and (x2,y2)
+            set the endpoints of the other line to (x3,y3) and (x4,y4)
+
+    bottom = midpoint((x1,y1), (x3,y3))
+    top = midpoint((x2,y2), (x4,y4))
+
+    return bottom, top
+
+
+----------------------
+
+WIDTH = number
+SIDE = WIDTH / sqrt(2)
+HEIGHT = WIDTH / 2
+
+b1 = (0, 2448)
+b2 = (0 + WIDTH, 2448)
+currC = midpoint(b1,b2) but up by HEIGHT units
+
+now LOOP until done:
+    # BUILDS NEXT TRIANGLE
+    black_slope = get_slope()
+
+    # find info about base to get b1, b2
+    base_slope, base_int = get_equation(black_slope, currC)
+    new_b1 = find_point(base_slope, base_int, -WIDTH/2, currC)
+    new_b2 = find_point(base_slope, base_int, WIDTH/2, currC)
+
+    # now find info about the altitude to get newC
+    height_slope = -1 / base_slope
+    height_slope, height_int = get_equation(height_slope, currC)
+    newC = find_point(height_slope, height_int, HEIGHT, currC)
+
+    black_img = blackout(b1, b2, C)
+
+    bottom, top = find_midline(black_img)
+
+    draw arrow between bottom and top on original image
+
+    currC = newC
+
+"""
