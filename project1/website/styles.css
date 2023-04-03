@@ -1,0 +1,225 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Styles large picture at top of site */
+.header {
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.7;
+}
+
+/*--------------------------NAVIGATION BAR-----------------------------*/
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles logo */
+nav img{
+    width: 150px;
+}
+
+/* Styles tablinks */
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+/* Generates underline when hovering over tablinks */
+.nav-links ul li:after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #d09ae6;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+.nav-links ul li:hover:after {
+    width: 100%;
+}
+
+/*--------------------------HOME PAGE-----------------------------*/
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 80px;
+    font-family: 'Gluten', cursive;
+}
+.text-box p {
+    margin: 0px 0px 40px;
+    font-size: 14px;
+    color: #fff
+}
+
+/* Styles button on homepage */
+.home-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.home-btn:hover {
+    border: 1px solid #d09ae6;
+    background: #d09ae6;
+    transition: 1s;
+}
+
+/* Hides menu icons for large screens */
+nav .fa {
+    display: none;
+}
+
+/*--------------------------ABOUT-----------------------------*/
+.home-content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.home-content h1 {
+    text-align: center;
+	font-size: 60px;
+	background:url(cartooncow.gif);
+    background-size: 200px 150px;
+    font-size: 90px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+p {
+    color: #100A39;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/*--------------------------PRICING-----------------------------*/
+/* Style page content */
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.pricing h2 {
+	text-align: center;
+	font-size: 60px;
+	background:url(mooncow.gif);
+    background-size: 200px 150px;
+    font-size: 90px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.price-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.price-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+/* Layer above image when hovering */
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover {
+    background: rgba(213, 167, 232, 0.8);
+}
+.layer ul li {
+    text-align: left;
+    font-family: Didot, serif;
+    padding: 10px 30px 10px 10px;
+    opacity: 0;
+}
+.layer:hover ul li {
+    font-size: 15px;
+    text-align: left;
+    font-family: Didot, serif;
+    padding: 10px 30px 10px 10px;
+    opacity: 1;
+    color: white;
+}
+.layer h3 {
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+    font-family: 'Gluten', cursive;
+    font-size: 30px;
+}
+
+/*--------------------------MORE-----------------------------*/
+.join {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(botdemo.jpg);
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px;
+}
+.join h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 40px;
+}
+/* Style for smaller devices */
+@media(max-width: 700px) {
+    .join h1 {
+        font-size: 20px;
+    }
+}
