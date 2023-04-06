@@ -21,12 +21,29 @@ We created a Flask API to allow users to run the robot through any browser and a
 The code for this project can be found in the [Project 3 Folder](https://github.com/jnnchi/CS200/tree/main/project3).
 
 ## Project 4: Java UI (November 2021)
+The code for this project can be found in the [Project 4 Folder](https://github.com/jnnchi/CS200/tree/main/project4).
+
 ## Project 5: Web UI 1 - Button Controls and Camera (December 2021)
+The code for this project can be found in the [Project 5 Folder](https://github.com/jnnchi/CS200/tree/main/project5).
+
 ## Project 6: Web UI 2 - Button Controls, Camera, and Log (January 2022)
+The code for this project can be found in the [Project 6 Folder](https://github.com/jnnchi/CS200/tree/main/project6).
+
 ## Project 7: Autonomous Stage - Web UI With Annotated Camera Stream, Self Correcting Robot (May 2022)
+The code for this project can be found in the [Project 7 Folder](https://github.com/jnnchi/CS200/tree/main/project7).
 
 ## Projects Not Using the Robot:
 ### Circle Detection on a Home Video of a Rolling Can (February 2022)
+The code for this project can be found in the [Non Robot Projects Folder](https://github.com/jnnchi/CS200/tree/main/non-robot-projects/1.%20Detect%20Circle%20on%20Rolling%20Can%20Video).
+
 ### Circle Detection on a Warped Circle Image (March 2022)
+The code for this project can be found in the [Non Robot Projects Folder](https://github.com/jnnchi/CS200/tree/main/non-robot-projects/2.%20Detect%20Warped%20Circle).
+
 ### Line Detection on Hand-Drawn Lines (March 2022)
+The code for this project can be found in the [Non Robot Projects Folder](https://github.com/jnnchi/CS200/tree/main/non-robot-projects/3.%20Detect%20Lines).
+
 ### Line Detection on Hand-Drawn Curved Paths (April 2022)
+The code for this project can be found in the [Non Robot Projects Folder](https://github.com/jnnchi/CS200/tree/main/non-robot-projects/4.%20Detect%20Curved%20Lines).
+
+### Final Project: Train Derail Detection on Video (June 2022)
+The code for this project can be found in the [Non Robot Projects Folder](https://github.com/jnnchi/CS200/tree/main/non-robot-projects/5.%20Final%20-%20Train%20Derail%20Detection).
