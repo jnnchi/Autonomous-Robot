@@ -1,5 +1,12 @@
-# CS200: Applications of Computer Vision in Python (September 2021 - June 2022)
+![9](https://github.com/jnnchi/Autonomous-Robot/assets/70595899/6d5fd1b5-d12d-4ece-af6f-835337c59d18)# CS200: Applications of Computer Vision in Python (September 2021 - June 2022)
 CS200, or Programming With a Purpose, is the second course in the AHS Computer Science Pre-Professional Program. It is a project-based and team-oriented class, where we worked in an Agile-SCRUM environment on several projects, which would be customized by each team to progress toward a final goal. My team's goal was to build a robot that could run autonomously on a path by live-processing an image stream from a camera attached to its front, which would capture the edges of the path. I was the scrum master of the team, and I led development in languages including Python, Java, HTML, and JavaScript, as well as modules such as Flask, OpenCV, Java Swing, Logger, and Numpy. 
+
+
+![7](https://github.com/jnnchi/Autonomous-Robot/assets/70595899/a5cbf285-7579-425b-9aaf-fd875b4c289a)
+![8](https://github.com/jnnchi/Autonomous-Robot/assets/70595899/4caaf392-8507-4dae-b7cd-7939fdb8ebf9)
+![9](https://github.com/jnnchi/Autonomous-Robot/assets/70595899/32a4bc18-406c-4c00-8dcb-38420f7d9bcb)
+![10](https://github.com/jnnchi/Autonomous-Robot/assets/70595899/0948c8e6-a1d8-4912-8f54-b796a2c3779c)
+
 
 Here is a summary of the contents of this repository:
 
