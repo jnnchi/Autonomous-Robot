@@ -1,5 +1,5 @@
-# CS200 (September 2021 - June 2022)
-CS200, or Programming With a Purpose, is the second course in the AHS Computer Science Pre-Professional Program. It is a project-based and team-oriented class, where we worked in an Agile-SCRUM environment to build a robot that could run autonomously by processing an image stream from a camera attached to its front. I was the scrum master of the team and led development in languages including Python, Java, HTML, and JavaScript, as well as modules such as Flask, OpenCV, Java Swing, Logger, and Numpy. 
+# CS200: Applications of Computer Vision in Python (September 2021 - June 2022)
+CS200, or Programming With a Purpose, is the second course in the AHS Computer Science Pre-Professional Program. It is a project-based and team-oriented class, where we worked in an Agile-SCRUM environment on several projects, which would be customized by each team to progress toward a final goal. My team's goal was to build a robot that could run autonomously on a path by live-processing an image stream from a camera attached to its front, which would capture the edges of the path. I was the scrum master of the team, and I led development in languages including Python, Java, HTML, and JavaScript, as well as modules such as Flask, OpenCV, Java Swing, Logger, and Numpy. 
 
 Here is a summary of the contents of this repository:
 
@@ -19,6 +19,8 @@ We created a Flask API to allow users to run the robot through any browser and a
 The code for this project can be found in the [Project 3 Folder](https://github.com/jnnchi/CS200/tree/main/project3).
 
 ## Project 4: Java UI (November 2021)
+This allowed for the robot to be controlled using a UI built using Java Swing. This UI was later removed, as we decided to use a web UI instead.
+
 The code for this project can be found in the [Project 4 Folder](https://github.com/jnnchi/CS200/tree/main/project4).
 
 ## Project 5: Web UI 1 - Button Controls and Camera (December 2021)
